@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for roast-me-bot on 2023-12-03T23:54:19-05:00
+# fly.toml app configuration file generated for roast-me-bot on 2023-12-04T03:18:24-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -8,13 +8,7 @@ primary_region = "yul"
 
 [build]
 
-[http_service]
-  internal_port = 8080
-  force_https = true
-  auto_stop_machines = true
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ["app"]
+[env]
 
 [[vm]]
   cpu_kind = "shared"
